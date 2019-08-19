@@ -2,3 +2,17 @@ div {
     display: flex;
     flex-direction: column;
 }
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #eee;
+ }
+ header {
+    background-color: #1ECEFD;
+ }
+ button {
+    background-color: #505355;
+ }
+ a:hover {
+    color: #5BECD8;
+ }
