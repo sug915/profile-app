@@ -1,0 +1,39 @@
+<!-- <main>
+    <section>
+        <form #editForm="ngForm" (ngSubmit)="submitProfile(editForm)">
+            <p>Use the form below to update your profile</p>
+
+            <label for = "name">Name</label>
+            <input id = "name" type="text" value="{{profile.name}}";
+
+
+        </form>
+    </section>
+</main> -->
+
+<main>
+        <section>
+          <form #editForm="ngForm" (ngSubmit)="updateProfile(editForm)">
+            <p>Use the form below</p>
+            <label for="username">Name</label>
+            <input
+              id="username"
+              type="text"
+              [(ngModel)]=
+                "userProfile.username"
+              
+            />
+            <label for="contact">Contact</label>
+            <input
+              id="contact"
+              type="text"
+              [(ngModel)]="userProfile.contact"
+              name="contact"
+            />
+            <label for="bio">Bio</label>
+            <textarea id="bio-info" type="text" [(ngModel)]="userProfile.bio" name="bio"></textarea>
+            <button>Update</button>
+
+          </form>
+        </section>
+       </main>
